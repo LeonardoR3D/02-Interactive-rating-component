@@ -1,0 +1,54 @@
+/* custom properties */
+:root {
+    --color-background: #141519;
+    --color-card-gradient-01: #232A34;
+    --color-card-gradient-02: #171E28;
+    --color-orange: #fb7413;
+    --color-white: #ffffff;
+    --color-grey-light: #959eac;
+    --color-grey-medium: #7c8798;
+    --color-grey-strong-01: #262F38;
+}
+/* .
+.
+.
+.
+.
+.
+.
+. */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 25px;
+    border-radius: 10px;
+    background-image: radial-gradient(
+        circle farthest-side at 50% 0%, 
+        var(--color-card-gradient-01), 
+        var(--color-card-gradient-02) 100%
+        );
+}
+.circleStar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-grey-strong-01);
+    border-radius: 50%;
+}
+.card p {
+    color: var(--color-grey-light);
+}
+.card .title {
+    color: var(--color-white);
+}
