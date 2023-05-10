@@ -3,11 +3,12 @@
     --color-background: #141519;
     --color-card-gradient-01: #232A34;
     --color-card-gradient-02: #171E28;
-    --color-orange: #fb7413;
+    --color-orange: #fc7614;
     --color-white: #ffffff;
-    --color-grey-light: #959eac;
+    --color-grey-light: #989EAA;
     --color-grey-medium: #7c8798;
     --color-grey-strong-01: #262F38;
+    --margin-space: 20px;
 }
 /* .
 .
@@ -16,39 +17,118 @@
 .
 .
 .
-. */
+. Background*/
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--color-background);
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
 }
+/* .
+.
+.
+.
+.
+.
+.
+. Card body*/
 .card {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 320px;
-    padding: 25px;
-    border-radius: 10px;
+    width: 330px;
+    padding: 20px;
+    border-radius: 20px;
     background-image: radial-gradient(
         circle farthest-side at 50% 0%, 
         var(--color-card-gradient-01), 
-        var(--color-card-gradient-02) 100%
+        var(--color-card-gradient-02) 75%
         );
+    color: var(--color-grey-light);
+    font-size: 15px;
 }
-.circleStar {
+/* .
+.
+.
+.
+.
+.
+.
+. Star icon*/
+.circle-star {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: var(--color-grey-strong-01);
     border-radius: 50%;
 }
+.icon-star {
+    width: 13px;
+    height: 13px;
+}
+.icon-star path {
+    fill: var(--color-orange);
+}
+/* .
+.
+.
+.
+.
+.
+.
+. Card text*/
 .card p {
-    color: var(--color-grey-light);
+    line-height: 1.5;
+    margin: 0 0 var(--margin-space);
 }
 .card .title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    margin: var(--margin-space) 0;
     color: var(--color-white);
+}
+/* .
+.
+.
+.
+.
+.
+.
+. Buttons*/
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 var(--margin-space);
+}
+.rating-options button {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-grey-strong-01);
+    color: var(--color-grey-light);
+}
+.rating-options button:hover, .rating-options button:focus {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+.btn-submit {
+    cursor: pointer;
+    padding: 13px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--color-orange);
+    letter-spacing: 2px;
+    color: var(--color-white);
+    margin: 0 0 var(--margin-space);
+}
+.btn-submit:hover, .btn-submit:focus {
+    background-color: var(--color-white);
+    color: var(--color-orange);
 }
