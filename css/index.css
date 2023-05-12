@@ -33,7 +33,7 @@ body {
 .
 .
 .
-. Card body*/
+. Card, Rating and Thank-you*/
 .card {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,22 @@ body {
         );
     color: var(--color-grey-light);
     font-size: 15px;
+}
+.rating-content {
+    display: inherit;
+    flex-direction: inherit;
+}
+.rating-content.hidden {
+    display: none;
+}
+.thank-you-content {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+    text-align: center;
+}
+.thank-you-content.hidden {
+    display: none;
 }
 /* .
 .
@@ -112,10 +128,14 @@ body {
     border: none;
     border-radius: 50%;
     background-color: var(--color-grey-strong-01);
-    color: var(--color-grey-light);
+    color: inherit;
 }
-.rating-options button:hover, .rating-options button:focus {
+.rating-options button:hover {
     background-color: var(--color-orange);
+    color: var(--color-white);
+}
+.rating-options button:focus {
+    background-color: var(--color-grey-medium);
     color: var(--color-white);
 }
 .btn-submit {
@@ -130,5 +150,35 @@ body {
 }
 .btn-submit:hover, .btn-submit:focus {
     background-color: var(--color-white);
+    color: var(--color-orange);
+}
+/* .
+.
+.
+.
+.
+.
+.
+. Illstrations*/
+.e-commerce-illustration {
+    width: 50%;
+    margin: var(--margin-space) 0;
+}
+/* .
+.
+.
+.
+.
+.
+.
+. Rating result*/
+.rating-result {
+    margin: calc(var(--margin-space) / 2) 0;
+    padding: 8px 13px 5px;
+    border-radius: 50px;
+    background-color: var(--color-grey-strong-01);
+}
+.rating-result p {
+    margin: 0;
     color: var(--color-orange);
 }
