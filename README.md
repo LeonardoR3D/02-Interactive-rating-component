@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/LeonardoR3D/frontend-mentor-challenge-002.git]
-- Live Site URL: [https://leonardor3d.github.io/frontend-mentor-challenge-002/]
+- Live Site URL: [https://leonardor3d.github.io/FMC-02-Interactive-rating-component/]
 
 ## My process
 
